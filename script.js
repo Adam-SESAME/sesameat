@@ -1,4 +1,4 @@
-let users = ['Eliott', 'Than', 'Déborah', 'Faustine', 'Armand', 'Lyndon', 'Michelle', 'Adam'];
+let users = ['Eliott', 'Than', 'Déborah', 'Faustine', 'Armand', 'Lyndon', 'Michelle', 'Adam', 'Jason'];
 let userImages = {
     'Eliott': 'images/eliott.jpg',
     'Than': 'images/than.jpg',
@@ -7,7 +7,8 @@ let userImages = {
     'Armand': 'images/armand.jpg',
     'Lyndon': 'images/lyndon.jpg',
     'Michelle': 'images/michelle.jpg',
-    'Adam': 'images/adam.jpg'
+    'Adam': 'images/adam.jpg',
+    'Jason': 'images/jason.jpg'
 };
 let restaurants = ['Monoprix', 'McDonalds', 'Burger King', 'Poulet Braisé', 'OTacos', 'Mangez & Cassez-vous'];
 let restaurantImages = {
