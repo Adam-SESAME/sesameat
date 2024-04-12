@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#userSelect {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#findRestaurant {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#findRestaurant:hover {
+    background-color: #45a049;
+}
+
+#restaurantDisplay {
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* Adjust the margin as needed */
+}
+
+#userImage,
+#restaurantImage {
+    width: 200px;
+    /* Make the images bigger */
+    height: 200px;
+    /* Make the images bigger */
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 10px;
+    /* Adjust the margin as needed */
+}

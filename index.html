@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    function checkAuth() {
+        const storedPassword = localStorage.getItem('password');
+        const correctPassword = 'goodfood4sesame';
+        const encodedCorrectPassword = btoa(correctPassword); // Encode the correct password
+
+        if (!storedPassword || storedPassword !== encodedCorrectPassword) {
+            const password = prompt('Please enter the password:');
+            if (password === correctPassword) {
+                localStorage.setItem('password', btoa(password)); // Store the encoded password
+            } else {
+                alert('Incorrect password. Please try again.');
+                window.location.reload();
+            }
+        }
+    }
+    checkAuth();
+</script>
+</body>
+
+<body>
+    <select id="userSelect"></select>
+    <button id="findRestaurant">Where do I eat?</button>
+    <div id="restaurantDisplay"></div>
+    <div id="imageContainer">
+        <img id="userImage" src="" alt="User's Picture" style="display: none;">
+        <img id="restaurantImage" src="" alt="Restaurant's Picture" style="display: none;">
+    </div>
+
+</html>
